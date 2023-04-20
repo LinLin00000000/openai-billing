@@ -6,7 +6,7 @@ import fetch from 'cross-fetch'
  * @param {string} options.baseURL - openai api base url, need http/https prefix, default to 'https://api.openai.com'
  * @returns {Promise<{ total: number, used: number, remain: number, expiresTime: number } | { error: { code: string, message: string } }>}
  */
-export default async function fetchBilling(
+export async function fetchBilling(
     apikey,
     { baseURL = 'https://api.openai.com' } = {}
 ) {

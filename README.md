@@ -3,7 +3,7 @@
 ## Usage
 
 ```javascript
-import fetchBilling from "openai-billing"
+import { fetchBilling } from "openai-billing"
 
 const apikey = 'YOUR OPENAI KEY'
 
