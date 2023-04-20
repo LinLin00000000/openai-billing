@@ -1,10 +1,10 @@
 {
     "name": "openai-billing",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "fetch openai billing",
     "homepage": "https://github.com/LinLin00000000/openai-billing",
     "type": "module",
-    "main": "dist/index.js",
+    "main": "index.js",
     "module": "dist/index.js",
     "exports": {
         ".": {
