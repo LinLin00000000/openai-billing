@@ -5,6 +5,9 @@
 ```javascript
 import { fetchBilling } from "openai-billing"
 
+// for CommonJS
+// const { fetchBilling } = require("openai-billing")
+
 const apikey = 'YOUR OPENAI KEY'
 
 const result = await fetchBilling(apikey, { baseURL: 'https://api.openai.com' })
