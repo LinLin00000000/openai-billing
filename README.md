@@ -1,5 +1,11 @@
 # 查询 openai 余额
 
+## Install
+
+```shell
+npm i openai-billing
+```
+
 ## Usage
 
 ```javascript
