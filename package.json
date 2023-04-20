@@ -1,6 +1,6 @@
 {
     "name": "openai-billing",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "fetch openai billing",
     "homepage": "https://github.com/LinLin00000000/openai-billing",
     "type": "module",
