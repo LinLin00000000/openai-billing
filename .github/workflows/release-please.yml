@@ -17,4 +17,4 @@ jobs:
         with:
           token: ${{ secrets.RELEASE_TOKEN }}
           release-type: node
-          package-name: release-please-action
+          package-name: openai-billing
