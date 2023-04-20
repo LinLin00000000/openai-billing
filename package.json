@@ -1,0 +1,41 @@
+{
+    "name": "openai-billing",
+    "version": "1.0.0",
+    "description": "fetch openai billing",
+    "homepage": "https://github.com/LinLin00000000/openai-billing",
+    "type": "module",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup index.js --format esm,cjs,iife --global-name fetchBilling"
+    },
+    "keywords": [
+        "openai",
+        "billing",
+        "credit",
+        "grant",
+        "usage",
+        "api"
+    ],
+    "author": "Lin <i@linlin.me>",
+    "license": "MIT",
+    "dependencies": {
+        "cross-fetch": "^3.1.5"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LinLin00000000/openai-billing.git"
+    },
+    "bugs": {
+        "url": "https://github.com/LinLin00000000/openai-billing/issues"
+    }
+}
