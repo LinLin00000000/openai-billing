@@ -6,9 +6,6 @@ dependencies:
     version: 3.1.5
 
 devDependencies:
-  rescript:
-    specifier: ^10.1.4
-    version: 10.1.4
   tsup:
     specifier: ^6.7.0
     version: 6.7.0
@@ -713,12 +710,6 @@ packages:
     engines: {node: '>=8.10.0'}
     dependencies:
       picomatch: 2.3.1
-    dev: true
-
-  /rescript@10.1.4:
-    resolution: {integrity: sha512-FFKlS9AG/XrLepWsyw7B+A9DtQBPWEPDPDKghV831Y2KGbie+eeFBOS0xtRHp0xbt7S0N2Dm6hhX+kTZQ/3Ybg==}
-    hasBin: true
-    requiresBuild: true
     dev: true
 
   /resolve-from@5.0.0:

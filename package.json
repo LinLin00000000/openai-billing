@@ -16,9 +16,7 @@
         "dist"
     ],
     "scripts": {
-        "build": "tsup index.js --format esm,cjs,iife --global-name fetchBilling",
-        "res:build": "rescript",
-        "res:start": "rescript build -w"
+        "build": "tsup index.js --format esm,cjs,iife --global-name fetchBilling"
     },
     "keywords": [
         "openai",
@@ -41,7 +39,6 @@
         "url": "https://github.com/LinLin00000000/openai-billing/issues"
     },
     "devDependencies": {
-        "rescript": "^10.1.4",
         "tsup": "^6.7.0"
     }
 }
