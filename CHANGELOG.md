@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/LinLin00000000/openai-billing/compare/v2.0.0...v2.1.0) (2023-05-03)
+
+
+### Features
+
+* add support and documentation for browser iife usage ([f4305e0](https://github.com/LinLin00000000/openai-billing/commit/f4305e0fa97fc6d364f9578164a8ee41408556ad))
+
 ## [2.0.0](https://github.com/LinLin00000000/openai-billing/compare/v1.1.1...v2.0.0) (2023-04-20)
 
 
