@@ -15,7 +15,6 @@ import { fetchBilling } from "openai-billing"
 // const { fetchBilling } = require("openai-billing")
 
 const apikey = 'YOUR OPENAI KEY'
-
 const result = await fetchBilling(apikey, { baseURL: 'https://api.openai.com' })
 
 if (result.error) {
@@ -32,4 +31,17 @@ else {
     `)
 }
 
+```
+
+## Use in browser
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/openai-billing@2">
+```
+
+```javascript
+const apikey = 'YOUR OPENAI KEY'
+const result = await OpenaiBilling.fetchBilling(apikey, { baseURL: 'https://api.openai.com' })
+
+// ...
 ```

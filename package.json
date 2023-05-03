@@ -6,17 +6,12 @@
     "type": "module",
     "main": "index.js",
     "module": "dist/index.js",
-    "exports": {
-        ".": {
-            "import": "./dist/index.js",
-            "require": "./dist/index.cjs"
-        }
-    },
+    "browser": "dist/index.global.js",
     "files": [
         "dist"
     ],
     "scripts": {
-        "build": "tsup index.js --format esm,cjs,iife --global-name fetchBilling"
+        "build": "tsup index.js --format esm,cjs,iife --platform browser --global-name OpenaiBilling"
     },
     "keywords": [
         "openai",
