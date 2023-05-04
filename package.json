@@ -41,6 +41,7 @@
         "url": "https://github.com/LinLin00000000/openai-billing/issues"
     },
     "devDependencies": {
+        "gentype": "^4.5.0",
         "rescript": "^10.1.4",
         "tsup": "^6.7.0"
     }
