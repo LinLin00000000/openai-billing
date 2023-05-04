@@ -61,17 +61,13 @@ export async function fetchBilling(
     } catch (err) {
         return {
             error: {
-                code: err.code ?? 'unknown',
-                message: err.message ?? err.stack,
+                code: err.code ? err.code : 'unknown',
+                message: err.message ? err.message : err.stack,
             },
         }
     }
 }
-
-/**
- * @param {Date} date
- */
-function formatDate(date) {
-    return date.toISOString().slice(0, 10)
-}
 ")
+
+@genType
+let formatDate = (date: Js.Date.t) => date->Js.Date.toISOString->Js.String2.slice(~from=0, ~to_=10)

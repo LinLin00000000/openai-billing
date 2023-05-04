@@ -48,7 +48,7 @@ export async function fetchBilling(
             : new Date(now - 90 * 24 * 60 * 60 * 1000)
 
         const endDate = new Date(now.getTime() + 24 * 60 * 60 * 1000)
-        const usage = await fetch(`${ baseURL } / dashboard / billing / usage ? start_date = ${ formatDate(startDate) } & end_date=${ formatDate(endDate) }`, { headers }).then(res => res.json())
+        const usage = await fetch(`${ baseURL }/dashboard/billing/usage?start_date=${ formatDate(startDate) }&end_date=${ formatDate(endDate) }`, { headers }).then(res => res.json())
 
         const total = subscription.hard_limit_usd
         const used = usage.total_usage / 100
@@ -61,19 +61,21 @@ export async function fetchBilling(
             expiresTime
         }
     } catch (err) {
-        return 
+        return {
+            error: {
+                code: err.code ? err.code : 'unknown',
+                message: err.message ? err.message : err.stack,
+            },
+        }
     }
-}
-
-/**
- * @param {Date} date
- */
-function formatDate(date) {
-    return date.toISOString().slice(0, 10)
 }
 ;
 
+function formatDate(date) {
+  return date.toISOString().slice(0, 10);
+}
+
 export {
-  
+  formatDate ,
 }
 /*  Not a pure module */
